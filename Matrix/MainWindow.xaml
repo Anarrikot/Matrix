@@ -10,21 +10,29 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="197"/>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="30"/>
             <ColumnDefinition/>
-            <ColumnDefinition Width="800"/>
+            <ColumnDefinition Width="521"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="20"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="auto" MinHeight="30"/>
+            <RowDefinition Height="auto" MinHeight="28"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="440"/>
         </Grid.RowDefinitions>
-        <Image gif:ImageBehavior.AnimatedSource="C:\Users\Admin\source\repos\\Matrix\Matrix\bin\Debug\08a8077ec79955d31f57266caf1b1f9f.gif " Margin="136,0,172,310" Grid.RowSpan="6" Grid.Column="4"/>
+        <TextBlock Grid.Column="1"  Grid.Row="1" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Введите размеры первой матрицы" VerticalAlignment="Top" Height="17" Width="193" />
+        <TextBlock HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Введите размеры второй матрицы" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1" Height="17" Width="193"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Left" Grid.Row="1" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="30" Height="20" Name="xMat1"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="30" Height="20" Name="xMat2"/>
+        <TextBox Grid.Column="3" HorizontalAlignment="Left" Grid.Row="1" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="30" Height="20" Name="yMat1"/>
+        <TextBox Grid.Column="3" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="30" Height="20" Name="yMat2"/>
+        <Button Content="Построить" Grid.Column="5" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="75" Height="22" RenderTransformOrigin="0.52,1.485" Margin="0,4,0,0"/>
+        <Image gif:ImageBehavior.AnimatedSource="C:\Users\Admin\source\repos\\Matrix\Matrix\bin\Debug\08a8077ec79955d31f57266caf1b1f9f.gif " Margin="0,68,239,10" Grid.Column="4" Grid.Row="3" Grid.ColumnSpan="2"/>
     </Grid>
 
 </Window>

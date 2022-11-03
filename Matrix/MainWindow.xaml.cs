@@ -21,5 +21,6 @@ namespace Matrix
         {
             InitializeComponent();
         }
+        //<Image gif:ImageBehavior.AnimatedSource="C:\Users\Admin\source\repos\\Matrix\Matrix\bin\Debug\08a8077ec79955d31f57266caf1b1f9f.gif " Margin="10,78,479,98" Grid.Column="4" Grid.Row="4"/>
     }
 }
