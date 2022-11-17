@@ -13,6 +13,12 @@ namespace MatClass
         public int Column { get; set; }
         public T [,] Arr { get; set; }
 
+        public T this [int index1, int index2]
+        {
+            set { Arr[index1, index2] = value;}
+            get { return Arr[index1, index2]; }
+        }
+
         public Mat(int Row, int Column)
         {
             if (Row > 0 && Column > 0)
@@ -42,7 +48,7 @@ namespace MatClass
             {
                 for (int i = 0; i < MatrixA.Row; i++)
                     for (int j = 0; j < MatrixA.Column; j++)
-                         MatrixResult.Arr[i, j] =  Add(MatrixA.Arr[i, j],MatrixB.Arr[i, j]);
+                         MatrixResult[i, j] =  Add(MatrixA[i, j],MatrixB[i, j]);
             }
             else
                 throw new Exception("Число столбцов не равно числу строк");
@@ -58,7 +64,7 @@ namespace MatClass
                     for (int j = 0; j < MatrixB.Column; j++)
                         for (int k = 0; k < MatrixB.Row; k++)
                         {
-                            MatrixResult.Arr[i, j] = Add(MatrixResult.Arr[i, j], Mult(MatrixA.Arr[i, k], MatrixB.Arr[k, j]));
+                            MatrixResult[i, j] = Add(MatrixResult[i, j], Mult(MatrixA[i, k], MatrixB[k, j]));
                         }
             }
             else
