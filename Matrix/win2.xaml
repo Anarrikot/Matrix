@@ -1,0 +1,21 @@
+﻿<Window x:Class="Matrix.win2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Matrix"
+        mc:Ignorable="d"
+        Title="win2" Height="450" Width="800">
+    <Grid>
+        <DataGrid HorizontalAlignment="Left" Height="200" Margin="130,10,0,0" VerticalAlignment="Top" Width="200" Name="mat1" AutoGenerateColumns="True" HeadersVisibility="None" RowHeaderWidth="0" CanUserAddRows="False" CanUserDeleteRows="False"/>
+        <DataGrid HorizontalAlignment="Left" Height="200" Margin="470,10,0,0" VerticalAlignment="Top" Width="200" Name="mat2" AutoGenerateColumns="True" HeadersVisibility="None" RowHeaderWidth="0" CanUserAddRows="False" CanUserDeleteRows="False"/>
+        <Button Content="Заполнить случайно" HorizontalAlignment="Left" Margin="335,145,0,0" VerticalAlignment="Top" Width="130" Height="23" Click="Button_Random"/>
+        <Button Content="Рассчитать" HorizontalAlignment="Left" Margin="335,173,0,0" VerticalAlignment="Top" Width="130" Click="Button_To_Solve"/>
+        <DataGrid HorizontalAlignment="Left" Height="200" Margin="300,215,0,0" VerticalAlignment="Top" Width="200" Name="mat3" AutoGenerateColumns="True" HeadersVisibility="None" RowHeaderWidth="0" CanUserAddRows="False" CanUserDeleteRows="False" Visibility="Hidden"/>
+        <ComboBox HorizontalAlignment="Left" Margin="335,47,0,0" VerticalAlignment="Top" Width="130" Name="cb" SelectedIndex="0">
+            <ComboBoxItem Content="Сложить" HorizontalAlignment="Center" Width="128"/>
+            <ComboBoxItem Content="Умножить" HorizontalAlignment="Center" Width="128"/>
+        </ComboBox>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="505,388,0,0" VerticalAlignment="Top" Width="84" Visibility="Hidden" Name="btnSave" Click="btnSave_Click"/>
+    </Grid>
+</Window>

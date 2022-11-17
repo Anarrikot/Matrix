@@ -12,23 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Data;
 
-namespace Matrix
+namespace MatClass
 {
+    /// <summary>
+    /// Логика взаимодействия для MainWindow.xaml
+    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void Btn1_Click(object sender, RoutedEventArgs e)
-        {
-            win2 win2 = new win2(Convert.ToInt32(xMat1.Text), Convert.ToInt32(yMat1.Text), Convert.ToInt32(xMat2.Text), Convert.ToInt32(yMat2.Text), cb.SelectedIndex);
-            this.Close();
-            win2.Show();
-            
         }
     }
 }

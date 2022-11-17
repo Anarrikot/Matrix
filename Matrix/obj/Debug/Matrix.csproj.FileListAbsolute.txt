@@ -17,3 +17,8 @@ C:\Users\Admin\source\repos\Matrix\Matrix\bin\Debug\WpfAnimatedGif.dll
 C:\Users\Admin\source\repos\Matrix\Matrix\bin\Debug\WpfAnimatedGif.pdb
 C:\Users\Admin\source\repos\Matrix\Matrix\bin\Debug\WpfAnimatedGif.xml
 C:\Users\Admin\source\repos\Matrix\Matrix\obj\Debug\Matrix.csproj.CopyComplete
+C:\Users\Admin\source\repos\Matrix\Matrix\bin\Debug\MatClass.exe
+C:\Users\Admin\source\repos\Matrix\Matrix\bin\Debug\MatClass.pdb
+C:\Users\Admin\source\repos\Matrix\Matrix\bin\Debug\MatClass.exe.config
+C:\Users\Admin\source\repos\Matrix\Matrix\obj\Debug\win2.g.cs
+C:\Users\Admin\source\repos\Matrix\Matrix\obj\Debug\win2.baml
